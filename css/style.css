@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0deg, 0%, 98%);
+  padding: 1.5rem;
+  line-height: 1.5;
+}
+
+header {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+header h1,
+header h2 {
+  font-size: 1.1rem;
+  color: hsl(234deg, 12%, 34%);
+}
+header h1 {
+  font-weight: 200;
+}
+header h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 0.8rem;
+  color: hsl(229deg, 6%, 66%);
+}
+
+.features {
+  margin: 3rem auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-gap: 0.8rem;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 19rem;
+  width: 100%;
+  padding: 1.4rem 1.7rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+  color: hsl(234deg, 12%, 34%);
+  margin-bottom: 0.7rem;
+}
+.card-description p {
+  color: hsl(229deg, 6%, 66%);
+  font-size: 0.7rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+}
+.card-icon {
+  width: 100%;
+}
+.card-icon img {
+  display: block;
+  width: 3rem;
+  margin-left: auto;
+}
+
+.card:nth-child(1) {
+  border-top: hsl(180deg, 62%, 55%) 3px solid;
+}
+
+.card:nth-child(2) {
+  border-top: hsl(0deg, 78%, 62%) 3px solid;
+}
+
+.card:nth-child(3) {
+  border-top: hsl(34deg, 97%, 64%) 3px solid;
+}
+
+.card:nth-child(4) {
+  border-top: hsl(212deg, 86%, 64%) 3px solid;
+}
+
+@media screen and (min-width: 400px) {
+  header {
+    width: 55%;
+  }
+  header h1,
+header h2 {
+    font-size: 1.8rem;
+  }
+
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  .card {
+    max-width: none;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    width: 35%;
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 20rem);
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 19rem;
+  }
+
+  .card:nth-child(1) {
+    grid-row: 1/span 2;
+    align-self: center;
+  }
+
+  .card:nth-child(3) {
+    grid-column: 2/3;
+  }
+
+  .card:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 1/span 2;
+    align-self: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
