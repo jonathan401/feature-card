@@ -109,6 +109,11 @@ header h2 {
 @media screen and (min-width: 1024px) {
   header {
     width: 35%;
+    margin: 2rem auto;
+  }
+  header h1,
+header h2 {
+    font-size: 2rem;
   }
 
   .features {
