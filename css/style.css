@@ -55,7 +55,7 @@ header .sub-header {
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.4rem;
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
 }
 .card-title {
   color: hsl(234deg, 12%, 34%);
@@ -63,7 +63,7 @@ header .sub-header {
 }
 .card-description p {
   color: hsl(229deg, 6%, 66%);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 2;
   margin-bottom: 2.5rem;
 }
@@ -118,22 +118,23 @@ header h2 {
   }
   header h1,
 header h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   header .sub-header {
     font-size: 1rem;
   }
 
   .features {
-    grid-template-columns: repeat(3, 19rem);
+    grid-template-columns: repeat(3, 20rem);
     justify-content: center;
+    align-content: center;
     grid-gap: 1.5rem;
   }
 
   .card {
     max-width: none;
     width: 100%;
-    height: 14rem;
+    height: 15rem;
   }
 
   .card:nth-child(1) {
