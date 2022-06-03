@@ -9,6 +9,9 @@
 
 body {
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   background-color: hsl(0deg, 0%, 98%);
@@ -32,7 +35,7 @@ header h2 {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
-header p {
+header .sub-header {
   font-size: 0.8rem;
   color: hsl(229deg, 6%, 66%);
 }
@@ -47,28 +50,32 @@ header p {
 
 .card {
   background-color: #fff;
+  height: 13rem;
   max-width: 19rem;
   width: 100%;
-  padding: 1.4rem 1.7rem;
+  padding: 1.5rem;
   border-radius: 0.4rem;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
 }
 .card-title {
   color: hsl(234deg, 12%, 34%);
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 .card-description p {
   color: hsl(229deg, 6%, 66%);
   font-size: 0.7rem;
   line-height: 2;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 .card-icon {
   width: 100%;
+  margin-top: 2rem;
 }
 .card-icon img {
   display: block;
-  width: 3rem;
+  position: relative;
+  bottom: 0.2rem;
+  width: 2.6rem;
   margin-left: auto;
 }
 
@@ -108,21 +115,24 @@ header h2 {
 }
 @media screen and (min-width: 1024px) {
   header {
-    width: 35%;
+    width: 60%;
     margin: 2rem auto;
   }
   header h1,
 header h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+  header .sub-header {
+    font-size: 1rem;
   }
 
   .features {
-    grid-template-columns: repeat(3, 20rem);
+    grid-template-columns: repeat(3, 17rem);
     justify-content: center;
   }
 
   .card {
-    max-width: 19rem;
+    max-width: none;
   }
 
   .card:nth-child(1) {
