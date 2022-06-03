@@ -127,6 +127,7 @@ header h2 {
   .features {
     grid-template-columns: repeat(3, 19rem);
     justify-content: center;
+    grid-gap: 1.5rem;
   }
 
   .card {
