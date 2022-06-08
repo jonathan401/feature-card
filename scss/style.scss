@@ -1,0 +1,92 @@
+@import 'global';
+
+header {
+  margin: 1.5rem auto;
+  text-align: center;
+
+  h1,
+  h2 {
+    font-size: 1.1rem;
+    color: $very-dark-blue;
+  }
+
+  h1 {
+    font-weight: 200;
+  }
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .sub-header {
+    font-size: 0.8rem;
+    color: $grayish-blue;
+  }
+}
+
+// configs
+// top border
+@mixin border-topping($color) {
+  border-top: $color 3px solid;
+}
+
+.features {
+  margin: 3rem auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-gap: 0.8rem;
+}
+
+.card {
+  background-color: #fff;
+  height: 13rem;
+  max-width: 19rem;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+
+  &-title {
+    color: $very-dark-blue;
+    margin-bottom: 0.5rem;
+  }
+
+  &-description p {
+    color: $grayish-blue;
+    font-size: 0.8rem;
+    line-height: 2;
+    margin-bottom: 2.5rem;
+  }
+
+  &-icon {
+    width: 100%;
+    margin-top: 2rem;
+
+    img {
+      display: block;
+      width: 3rem;
+      margin-left: auto;
+    }
+  }
+}
+
+.card:nth-child(1) {
+  @include border-topping($cyan);
+}
+
+.card:nth-child(2) {
+  @include border-topping($red);
+}
+
+.card:nth-child(3) {
+  @include border-topping($orange);
+}
+
+.card:nth-child(4) {
+  @include border-topping($blue);
+}
+
+@import 'tablet';
+@import 'desktop';

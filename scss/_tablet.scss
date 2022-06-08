@@ -1,0 +1,17 @@
+@media screen and (min-width: 400px) {
+  header {
+    width: 55%;
+    h1,
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  .card {
+    max-width: none;
+    width: 100%;
+  }
+}
